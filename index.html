@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <script src="index.js"> <!--Para chamar o JS--></script>
+
+    <!--_________________________________________________________________________________________________________-->
+
+    <hr>
+
+    <h1 style="background-color: yellow; text-align: center;">O que JavaScript pode fazer</h1>
+
+    <hr>
+    <pre>      
+        <H2># NO JAVASCRIPT VOCÊ UTILIZA ESSA FUNÇÂO PARA ALTERAR O TEXTO:</H2>
+        <hr>
+        function alterarHTML() {  
+
+            document.getElementById("texto").innerHTML="Olá Mundo!" //Você também pode colocar isso dentro de uma variavel = VAR;
+              
+        }
+    </pre>
+
+    <hr>
+
+    <p id="texto"> JS pode alterar o conteúdo HTML: </p>
+    <button style="border-radius: 3rem;" type="button" onclick="alterarHTML()">Clique em mim!</button>
+
+    <hr>
+
+    <!--______________________________________________________________________________________________________-->
+
+    <H1 style="background-color: yellow; text-align: center;">O que mais JS pode fazer...</H1>
+
+    <hr>
+
+    <h2># Nesse caso, JS altera o valor do atributo src(source/caminho) de uma imagem, através do seguinte código: </h2>
+
+    <hr>
+
+    <pre>
+        function ascender() {
+
+            document.getElementById("imagem").src = 'pic_bulbon.gif'
+        
+        }
+
+        function apagar() {
+        
+            document.getElementById("imagem").src = 'pic_bulboff.gif' 
+        
+        }
+    </pre>
+
+    <hr>
+    
+    <div id="lampada">
+
+        <button style="border-radius: 3rem;" type="button" onclick="ascender()"> Ascenda a luz! </button>
+
+        <img id="imagem" src="pic_bulboff.gif" alt="">
+
+        <button style="border-radius: 3rem;" type="button" onclick="apagar()"> Apague a luz! </button>
+
+    </div>
+    
+
+    <hr>
+
+    <!--______________________________________________________________________________________-->
+
+    <h1 style="background-color: yellow; text-align: center;">Mais Alterações com JavaScript</h1>
+
+    <hr>
+
+    <h2> # JS Pode alterar o estilo de um elemento HTML, através das funções:</h2>
+
+    <hr>
+
+    <pre>
+        //aumentar a fonte:
+
+        function aumentarfonte() {
+
+            document.getElementById("texto1").style.fontSize = '60px'
+
+            document.getElementById("texto1").style.color = "red"
+            
+        }
+
+        //Diminuir:
+
+        function voltarfonte() {
+
+            document.getElementById("texto1").style.fontSize = "20px"
+
+            document.getElementById("texto1").style.color = "black"
+
+        }
+    </pre>
+
+    <hr>
+
+    <p id="texto1">Esse texto será alterado quando você clicar no botão!</p>
+
+    <button style="border-radius: 3rem;" type="button" onclick="aumentarfonte()">Clique em mim para alterar!</button>
+
+    <button style="border-radius: 3rem;" type="button" onclick="voltarfonte()">Clique em mim para voltar!</button>
+
+    <hr>
+
+    <!--_______________________________________________________________________________________________________________-->
+
+    <h1 style="background-color: yellow; text-align: center;">Ainda, o que o JS pode fazer:</h1>
+    <hr>
+
+    <h2>O JS pode mostar elementos HTML ocultos dessa forma:</h2>
+    <hr>
+
+    <pre>
+        //mostrar imagem:
+
+        function mostrarimg() {
+
+            document.getElementById("imagem1").style.display = "block"
+
+        }
+    </pre>
+    <hr>
+
+    <img id="imagem1" style="display: none;" src="Unofficial_JavaScript_logo_2.svg.png" alt="" width="300px" height="300px">
+    
+    <hr>
+
+    <button style="border-radius: 3rem;" type="button" onclick="mostrarimg()">Clique em mim para mostrar a imagem!</button>
+    <hr>
+<!--
+
+    
+
+
+
+
+
+    -->
+
+</body>
+</html>

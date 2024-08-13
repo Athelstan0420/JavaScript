@@ -1,0 +1,8 @@
+Aula 12/08/2024 - WebII
+----------------------------------
+
+# JavaScript
+
+--------------------
+
+<script src="index.js"> <!--Para chamar o JS-->
